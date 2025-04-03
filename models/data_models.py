@@ -1,7 +1,8 @@
+import datetime
 from typing import List, Optional
 from dataclasses import dataclass
-from datetime import datetime
 
+from typing import Optional
 @dataclass
 class Quote:
     text: str
@@ -19,11 +20,11 @@ class Quote:
 
 @dataclass
 class Author:
-    name: str
-    born_date: str
-    born_location: str
-    description: str
-    quotes: List[Quote]  # Fixed typo from 'qoutes'
+    name: Optional[str]
+    born_date: Optional[datetime.datetime]
+    born_location: Optional[str]
+    description: Optional[str]
+    quotes: Optional[List[Quote]]
     
     def __str__(self) -> str:
         return f"""
