@@ -27,8 +27,8 @@ class AuthorParser:
         getBirthPlace = soup.select_one(".author-details > p > .author-born-location").get_text()
         getBirthPlace = self.cleaners.cleaner(getBirthPlace)
         getBirthDate = datetime.strptime(getBirthDate, "%B %d, %Y")
-        data = dm.Author(getName,getBirthDate,getBirthPlace,getDescription,[])
-        return data
+        authorData = dm.Author(getName,getBirthDate,getBirthPlace,getDescription,[])
+        return authorData
 
 
 if __name__ == "__main__":
