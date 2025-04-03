@@ -1,13 +1,16 @@
 import datetime
+from selectors import SelectSelector
 from typing import List, Optional
 from dataclasses import dataclass
 
 from typing import Optional
+
+
 @dataclass
 class Quote:
-    text: str
-    tags: List[str]
-    
+    text: Optional[str] = None
+    tags: Optional[List[str]] = None
+
     def __str__(self) -> str:
         return f'"{self.text}"\nTags: {", ".join(self.tags)}'
 
@@ -18,23 +21,23 @@ class Quote:
             'tags': self.tags
         }
 
+
 @dataclass
 class Author:
-    name: Optional[str]
-    born_date: Optional[datetime.datetime]
-    born_location: Optional[str]
-    description: Optional[str]
-    quotes: Optional[List[Quote]]
-    
+    name: Optional[str] = None
+    born_date: Optional[datetime.datetime] = None
+    born_location: Optional[str] = None
+    description: Optional[str] = None
+    quotes: Optional[List[Quote]] = None
+
     def __str__(self) -> str:
         return f"""
         Author: {self.name}
         Born: {self.born_date} in {self.born_location}
-        Description: {self.description}
         Number of quotes: {len(self.quotes)}
         """
 
-    def add_quote(self, quote: Quote) -> None:
+    def append_quotes(self, quote) -> None:
         """Add a new quote to the author's collection"""
         self.quotes.append(quote)
 
@@ -49,5 +52,5 @@ class Author:
             'born_date': self.born_date,
             'born_location': self.born_location,
             'description': self.description,
-            'quotes': [quote.to_dict() for quote in self.quotes]
+            'quotes': [quote.to_dict() for quote in self.quotes] if self.quotes else self.quotes
         }
