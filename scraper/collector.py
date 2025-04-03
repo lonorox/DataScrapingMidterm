@@ -50,7 +50,7 @@ class Collector:
             return None
 
     @staticmethod
-    def get_method(url, timeout=1, verify=True, Cert=None):
+    def get_method(url, timeout=2.5, verify=True, Cert=None):
         return Collector.__request_methods("GET", url, timeout=timeout, verify=verify, Cert=Cert)
 
     @staticmethod
