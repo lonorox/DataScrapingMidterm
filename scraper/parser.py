@@ -1,37 +1,43 @@
+from http.client import responses
+
 from bs4 import BeautifulSoup
 import requests
 from collector import Collector
-from utils import analyzer as cl
-from models import data_models as dm
+from DataScrapingMidterm.utils import prettier as pr
+from DataScrapingMidterm.models import data_models as dm
 from datetime import datetime
+
+
 class AuthorParser:
 
-    def __init__(self):
-        self.col = Collector()
-        self.cleaners = cl.Cleaners
-        # self.data =
-    def get_soup(self,url):
-        try:
-            response = self.col.get_method(url)
-            return BeautifulSoup(response.content,"html.parser")
-        except  requests.exceptions.RequestException as e:
-            raise e
+    def get_soup(self, url):
+        response = Collector.get_method(url)
+        return BeautifulSoup(response.text, "html.parser")
 
-    def get_author_info(self,url):
+    def get_author_info(self, url):
         soup = self.get_soup(url)
         getName = soup.select_one(".author-details > .author-title").get_text()
-        getName = self.cleaners.cleaner(getName)
+        getName = pr.cleaner(getName)
         getDescription = soup.select_one(".author-details > .author-description").get_text()
-        getDescription = self.cleaners.cleaner(getDescription)
+        getDescription = pr.cleaner(getDescription)
         getBirthDate = soup.select_one(".author-details > p >.author-born-date").get_text()
         getBirthPlace = soup.select_one(".author-details > p > .author-born-location").get_text()
-        getBirthPlace = self.cleaners.cleaner(getBirthPlace)
+        getBirthPlace = pr.cleaner(getBirthPlace)
         getBirthDate = datetime.strptime(getBirthDate, "%B %d, %Y")
-        authorData = dm.Author(getName,getBirthDate,getBirthPlace,getDescription,[])
+        authorData = dm.Author(getName, getBirthDate, getBirthPlace, getDescription, [])
         return authorData
 
+test_url = 'https://quotes.toscrape.com/author/Albert-Einstein/'
 
-if __name__ == "__main__":
-    a = AuthorParser()
-    data = a.get_author_info("http://quotes.toscrape.com/author/Eleanor-Roosevelt/")
-    print(data)
+a = AuthorParser()
+print(a.get_author_info(test_url).to_dict())
+
+
+#
+# def main_parser():
+#     website = 'https://quotes.toscrape.com'
+#     current_page = '/page/1/'
+#     ##
+#     data = {}
+#     a = AuthorParser()
+#     responses = a.col.get_method()

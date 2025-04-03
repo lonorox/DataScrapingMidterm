@@ -5,8 +5,8 @@ from dataclasses import dataclass
 from typing import Optional
 @dataclass
 class Quote:
-    text: str
-    tags: List[str]
+    text: Optional[str]
+    tags: Optional[List[str]]
     
     def __str__(self) -> str:
         return f'"{self.text}"\nTags: {", ".join(self.tags)}'
