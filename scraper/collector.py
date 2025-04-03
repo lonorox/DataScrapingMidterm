@@ -7,7 +7,8 @@ class Collector:
         self. DEFAULT_HEADERS = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 
-    def request_methods(self,method,url,headers=None,json =None, data=None, params = None,timeout = 2.5,verify = True, Cert = None):
+    # (encapsulation)
+    def __request_methods(self,method,url,headers=None,json =None, data=None, params = None,timeout = 2.5,verify = True, Cert = None):
         m = method.upper()
         headers = headers or self.DEFAULT_HEADERS
         # check which method is called
@@ -36,16 +37,16 @@ class Collector:
             return "Connection Error"
         except requests.exceptions.RequestException as err:
             return err
-
+    @staticmethod
     def get_method(self,url,timeout = 2.5,verify = True, Cert = None):
         return self.request_methods("GET",url,timeout = timeout,verify = verify, Cert = Cert)
-
+    @staticmethod
     def post_method(self,url,headers=None,json =None, data=None, params = None,timeout = 2.5,verify = True, Cert = None):
         return self.request_methods("POST",url,headers=headers,json =json, data=data, params = params,timeout = timeout,verify = verify, Cert = Cert)
-
+    @staticmethod
     def put_method(self,url,headers=None,json =None, data=None, params = None,timeout = 2.5,verify = True, Cert = None):
         return self.request_methods("PUT",url,headers=headers,json =json, data=data, params = params,timeout = timeout,verify = verify, Cert = Cert)
-
+    @staticmethod
     def delete_method(self,url,headers=None,json =None, data=None, params = None,timeout = 2.5,verify = True, Cert = None):
         return self.request_methods("DELETE",url,headers=headers,json =json, data=data, params = params,timeout = timeout,verify = verify, Cert = Cert)
 
