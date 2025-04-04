@@ -25,7 +25,7 @@ class Quote:
 @dataclass
 class Author:
     name: Optional[str] = None
-    born_date: Optional[datetime.datetime] = None
+    born_date: Optional[str] = None
     born_location: Optional[str] = None
     description: Optional[str] = None
     quotes: Optional[List[Quote]] = None
