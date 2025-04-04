@@ -43,12 +43,14 @@ class QuoteParser:
 
 class MainParser:
     def __init__(self):
-        self.list = []
-    def next_page(self,url):
+        self.jsonAuthorQuoteList = []
+
+    def next_page(self, url):
         response = Collector.get_method(url)
         soup = BeautifulSoup(response.text, 'html.parser')
-        nextURL =soup.find('li',class_='next').find('a').get('href')
+        nextURL = soup.find('li', class_='next').find('a').get('href')
         return nextURL
+
     def run(self, url, pages=1):
         current_page = '/page/1/'
         counter = 0
@@ -79,9 +81,10 @@ class MainParser:
                 else:
                     data[Author.name].append_quotes(quote)
 
-            current_page =  self.next_page(f'{url}{current_page}')
+            current_page = self.next_page(f'{url}{current_page}')
             counter += 1
 
         for v in data.values():
-            self.list.append(v.to_dict())
-        return self.list
+            self.jsonAuthorQuoteList.append(v.to_dict())
+
+        return self.jsonAuthorQuoteList

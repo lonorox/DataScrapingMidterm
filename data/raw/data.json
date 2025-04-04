@@ -1,0 +1,595 @@
+[
+    {
+        "name": "Albert Einstein",
+        "born_date": "1879-03-14T00:00:00",
+        "born_location": "in Ulm, Germany",
+        "description": "In 1879, Albert Einstein was born in Ulm,",
+        "quotes": [
+            {
+                "text": "\u201cThe world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.\u201d",
+                "tags": [
+                    "change",
+                    "deep-thoughts",
+                    "thinking",
+                    "world"
+                ]
+            },
+            {
+                "text": "\u201cThere are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.\u201d",
+                "tags": [
+                    "inspirational",
+                    "life",
+                    "live",
+                    "miracle",
+                    "miracles"
+                ]
+            },
+            {
+                "text": "\u201cTry not to become a man of success. Rather become a man of value.\u201d",
+                "tags": [
+                    "adulthood",
+                    "success",
+                    "value"
+                ]
+            },
+            {
+                "text": "\u201cIf you can't explain it to a six year old, you don't understand it yourself.\u201d",
+                "tags": [
+                    "simplicity",
+                    "understand"
+                ]
+            },
+            {
+                "text": "\u201cIf you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales.\u201d",
+                "tags": [
+                    "children",
+                    "fairy-tales"
+                ]
+            },
+            {
+                "text": "\u201cLogic will get you from A to Z; imagination will get you everywhere.\u201d",
+                "tags": [
+                    "imagination"
+                ]
+            },
+            {
+                "text": "\u201cAny fool can know. The point is to understand.\u201d",
+                "tags": [
+                    "knowledge",
+                    "learning",
+                    "understanding",
+                    "wisdom"
+                ]
+            },
+            {
+                "text": "\u201cLife is like riding a bicycle. To keep your balance, you must keep moving.\u201d",
+                "tags": [
+                    "life",
+                    "simile"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "J.K. Rowling",
+        "born_date": "1965-07-31T00:00:00",
+        "born_location": "in Yate, South Gloucestershire, England, The United Kingdom",
+        "description": "See also: Robert GalbraithAlthough she wr",
+        "quotes": [
+            {
+                "text": "\u201cIt is our choices, Harry, that show what we truly are, far more than our abilities.\u201d",
+                "tags": [
+                    "abilities",
+                    "choices"
+                ]
+            },
+            {
+                "text": "\u201cIt takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.\u201d",
+                "tags": [
+                    "courage",
+                    "friends"
+                ]
+            },
+            {
+                "text": "\u201cIt is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all - in which case, you fail by default.\u201d",
+                "tags": []
+            },
+            {
+                "text": "\u201cOf course it is happening inside your head, Harry, but why on earth should that mean that it is not real?\u201d",
+                "tags": [
+                    "dumbledore"
+                ]
+            },
+            {
+                "text": "\u201cTo the well-organized mind, death is but the next great adventure.\u201d",
+                "tags": [
+                    "death",
+                    "inspirational"
+                ]
+            },
+            {
+                "text": "\u201cIt matters not what someone is born, but what they grow to be.\u201d",
+                "tags": [
+                    "dumbledore"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Jane Austen",
+        "born_date": "1775-12-16T00:00:00",
+        "born_location": "in Steventon Rectory, Hampshire, The United Kingdom",
+        "description": "Jane Austen was an English novelist whose",
+        "quotes": [
+            {
+                "text": "\u201cThe person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.\u201d",
+                "tags": [
+                    "aliteracy",
+                    "books",
+                    "classic",
+                    "humor"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Marilyn Monroe",
+        "born_date": "1926-06-01T00:00:00",
+        "born_location": "in The United States",
+        "description": "Marilyn Monroe (born Norma Jeane Mortenso",
+        "quotes": [
+            {
+                "text": "\u201cImperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.\u201d",
+                "tags": [
+                    "be-yourself",
+                    "inspirational"
+                ]
+            },
+            {
+                "text": "\u201cThis life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.\u201d",
+                "tags": [
+                    "friends",
+                    "heartbreak",
+                    "inspirational",
+                    "life",
+                    "love",
+                    "sisters"
+                ]
+            },
+            {
+                "text": "\u201cYou believe lies so you eventually learn to trust no one but yourself.\u201d",
+                "tags": []
+            },
+            {
+                "text": "\u201cIf you can make a woman laugh, you can make her do anything.\u201d",
+                "tags": [
+                    "girls",
+                    "love"
+                ]
+            },
+            {
+                "text": "\u201cThe real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.\u201d",
+                "tags": [
+                    "love"
+                ]
+            },
+            {
+                "text": "\u201cA wise girl kisses but doesn't love, listens but doesn't believe, and leaves before she is left.\u201d",
+                "tags": [
+                    "attributed-no-source"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Andr\u00e9 Gide",
+        "born_date": "1869-11-22T00:00:00",
+        "born_location": "in Paris, France",
+        "description": "Andr\u00e9 Paul Guillaume Gide was a French au",
+        "quotes": [
+            {
+                "text": "\u201cIt is better to be hated for what you are than to be loved for what you are not.\u201d",
+                "tags": [
+                    "life",
+                    "love"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Thomas A. Edison",
+        "born_date": "1847-02-11T00:00:00",
+        "born_location": "in Milan, Ohio, The United States",
+        "description": "Thomas Alva Edison was an American invent",
+        "quotes": [
+            {
+                "text": "\u201cI have not failed. I've just found 10,000 ways that won't work.\u201d",
+                "tags": [
+                    "edison",
+                    "failure",
+                    "inspirational",
+                    "paraphrased"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Eleanor Roosevelt",
+        "born_date": "1884-10-11T00:00:00",
+        "born_location": "in The United States",
+        "description": "Anna Eleanor Roosevelt was an American po",
+        "quotes": [
+            {
+                "text": "\u201cA woman is like a tea bag; you never know how strong it is until it's in hot water.\u201d",
+                "tags": [
+                    "misattributed-eleanor-roosevelt"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Steve Martin",
+        "born_date": "1945-08-14T00:00:00",
+        "born_location": "in Waco, Texas, The United States",
+        "description": "Stephen Glenn \"Steve\" Martin is an Americ",
+        "quotes": [
+            {
+                "text": "\u201cA day without sunshine is like, you know, night.\u201d",
+                "tags": [
+                    "humor",
+                    "obvious",
+                    "simile"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Bob Marley",
+        "born_date": "1945-02-06T00:00:00",
+        "born_location": "in Nine Mile, Saint Ann, Jamaica",
+        "description": "Robert \"Bob\" Nesta Marley OM was a Jamaic",
+        "quotes": [
+            {
+                "text": "\u201cYou may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect\u2014you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break\u2014her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there.\u201d",
+                "tags": [
+                    "love"
+                ]
+            },
+            {
+                "text": "\u201cOne good thing about music, when it hits you, you feel no pain.\u201d",
+                "tags": [
+                    "music"
+                ]
+            },
+            {
+                "text": "\u201cThe truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.\u201d",
+                "tags": [
+                    "friendship"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Dr. Seuss",
+        "born_date": "1904-03-02T00:00:00",
+        "born_location": "in Springfield, MA, The United States",
+        "description": "Theodor Seuss Geisel was born 2 March 190",
+        "quotes": [
+            {
+                "text": "\u201cI like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.\u201d",
+                "tags": [
+                    "fantasy"
+                ]
+            },
+            {
+                "text": "\u201cToday you are You, that is truer than true. There is no one alive who is Youer than You.\u201d",
+                "tags": [
+                    "comedy",
+                    "life",
+                    "yourself"
+                ]
+            },
+            {
+                "text": "\u201cThe more that you read, the more things you will know. The more that you learn, the more places you'll go.\u201d",
+                "tags": [
+                    "learning",
+                    "reading",
+                    "seuss"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Douglas Adams",
+        "born_date": "1952-03-11T00:00:00",
+        "born_location": "in Cambridge, England, The United Kingdom",
+        "description": "Douglas No\u00ebl Adams was an English author,",
+        "quotes": [
+            {
+                "text": "\u201cI may not have gone where I intended to go, but I think I have ended up where I needed to be.\u201d",
+                "tags": [
+                    "life",
+                    "navigation"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Elie Wiesel",
+        "born_date": "1928-09-30T00:00:00",
+        "born_location": "in Sighet, Romania",
+        "description": "Eliezer Wiesel was a Romania-born America",
+        "quotes": [
+            {
+                "text": "\u201cThe opposite of love is not hate, it's indifference. The opposite of art is not ugliness, it's indifference. The opposite of faith is not heresy, it's indifference. And the opposite of life is not death, it's indifference.\u201d",
+                "tags": [
+                    "activism",
+                    "apathy",
+                    "hate",
+                    "indifference",
+                    "inspirational",
+                    "love",
+                    "opposite",
+                    "philosophy"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Friedrich Nietzsche",
+        "born_date": "1844-10-15T00:00:00",
+        "born_location": "in R\u00f6cken bei L\u00fctzen, Prussian Province of Saxony, Germany",
+        "description": "Friedrich Wilhelm Nietzsche (1844\u20131900) i",
+        "quotes": [
+            {
+                "text": "\u201cIt is not a lack of love, but a lack of friendship that makes unhappy marriages.\u201d",
+                "tags": [
+                    "friendship",
+                    "lack-of-friendship",
+                    "lack-of-love",
+                    "love",
+                    "marriage",
+                    "unhappy-marriage"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mark Twain",
+        "born_date": "1835-11-30T00:00:00",
+        "born_location": "in Florida, Missouri, The United States",
+        "description": "Samuel Langhorne Clemens, better known by",
+        "quotes": [
+            {
+                "text": "\u201cGood friends, good books, and a sleepy conscience: this is the ideal life.\u201d",
+                "tags": [
+                    "books",
+                    "contentment",
+                    "friends",
+                    "friendship",
+                    "life"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Allen Saunders",
+        "born_date": "1899-04-24T00:00:00",
+        "born_location": "in The United States",
+        "description": "Allen Saunders was an American writer, jo",
+        "quotes": [
+            {
+                "text": "\u201cLife is what happens to us while we are making other plans.\u201d",
+                "tags": [
+                    "fate",
+                    "life",
+                    "misattributed-john-lennon",
+                    "planning",
+                    "plans"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Pablo Neruda",
+        "born_date": "1904-07-12T00:00:00",
+        "born_location": "in Parral, Chile",
+        "description": "Pablo Neruda was the pen name and, later,",
+        "quotes": [
+            {
+                "text": "\u201cI love you without knowing how, or when, or from where. I love you simply, without problems or pride: I love you in this way because I do not know any other way of loving but this, in which there is no I or you, so intimate that your hand upon my chest is my hand, so intimate that when I fall asleep your eyes close.\u201d",
+                "tags": [
+                    "love",
+                    "poetry"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Ralph Waldo Emerson",
+        "born_date": "1803-05-25T00:00:00",
+        "born_location": "in Boston, Massachusetts, The United States",
+        "description": "in 1803, Ralph Waldo Emerson was born in",
+        "quotes": [
+            {
+                "text": "\u201cFor every minute you are angry you lose sixty seconds of happiness.\u201d",
+                "tags": [
+                    "happiness"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mother Teresa",
+        "born_date": "1910-08-26T00:00:00",
+        "born_location": "in Skopje, Macedonia, the Former Yugoslav Republic of",
+        "description": "Blessed Teresa of Calcutta, or Mother Ter",
+        "quotes": [
+            {
+                "text": "\u201cIf you judge people, you have no time to love them.\u201d",
+                "tags": [
+                    "attributed-no-source"
+                ]
+            },
+            {
+                "text": "\u201cNot all of us can do great things. But we can do small things with great love.\u201d",
+                "tags": [
+                    "misattributed-to-mother-teresa",
+                    "paraphrased"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Garrison Keillor",
+        "born_date": "1942-08-07T00:00:00",
+        "born_location": "in Anoka, Minnesota, The United States",
+        "description": "Garrison Keillor (born Gary Edward Keillo",
+        "quotes": [
+            {
+                "text": "\u201cAnyone who thinks sitting in church can make you a Christian must also think that sitting in a garage can make you a car.\u201d",
+                "tags": [
+                    "humor",
+                    "religion"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Jim Henson",
+        "born_date": "1936-09-24T00:00:00",
+        "born_location": "in Greenville, Mississippi, The United States",
+        "description": "James Maury \"Jim\" Henson was the most wid",
+        "quotes": [
+            {
+                "text": "\u201cBeauty is in the eye of the beholder and it may be necessary from time to time to give a stupid or misinformed beholder a black eye.\u201d",
+                "tags": [
+                    "humor"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Charles M. Schulz",
+        "born_date": "1922-11-26T00:00:00",
+        "born_location": "in Minneapolis, MN, The United States",
+        "description": "Charles Monroe Schulz was an American car",
+        "quotes": [
+            {
+                "text": "\u201cAll you need is love. But a little chocolate now and then doesn't hurt.\u201d",
+                "tags": [
+                    "chocolate",
+                    "food",
+                    "humor"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "William Nicholson",
+        "born_date": "1948-01-12T00:00:00",
+        "born_location": "in Lewes, Sussex, The United Kingdom",
+        "description": "Librarian Note: There is more than one au",
+        "quotes": [
+            {
+                "text": "\u201cWe read to know we're not alone.\u201d",
+                "tags": [
+                    "misattributed-to-c-s-lewis",
+                    "reading"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Jorge Luis Borges",
+        "born_date": "1899-08-24T00:00:00",
+        "born_location": "in Buenos Aires, Argentina",
+        "description": "Jorge Francisco Isidoro Luis Borges Aceve",
+        "quotes": [
+            {
+                "text": "\u201cI have always imagined that Paradise will be a kind of library.\u201d",
+                "tags": [
+                    "books",
+                    "library"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "George Eliot",
+        "born_date": "1819-11-22T00:00:00",
+        "born_location": "in South Farm, Arbury Hall, Nuneaton, Warwickshire, The United Kingdom",
+        "description": "In 1819, novelist George Eliot (nee Mary",
+        "quotes": [
+            {
+                "text": "\u201cIt is never too late to be what you might have been.\u201d",
+                "tags": [
+                    "inspirational"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "George R.R. Martin",
+        "born_date": "1948-09-20T00:00:00",
+        "born_location": "in Bayonne, New Jersey, The United States",
+        "description": "George R. R. Martin was born September 20",
+        "quotes": [
+            {
+                "text": "\u201cA reader lives a thousand lives before he dies, said Jojen. The man who never reads lives only one.\u201d",
+                "tags": [
+                    "read",
+                    "readers",
+                    "reading",
+                    "reading-books"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "C.S. Lewis",
+        "born_date": "1898-11-29T00:00:00",
+        "born_location": "in Belfast, Ireland",
+        "description": "CLIVE STAPLES LEWIS (1898\u20131963) was one o",
+        "quotes": [
+            {
+                "text": "\u201cYou can never get a cup of tea large enough or a book long enough to suit me.\u201d",
+                "tags": [
+                    "books",
+                    "inspirational",
+                    "reading",
+                    "tea"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Martin Luther King Jr.",
+        "born_date": "1929-01-15T00:00:00",
+        "born_location": "in Atlanta, Georgia, The United States",
+        "description": "Martin Luther King, Jr. was one of the pi",
+        "quotes": [
+            {
+                "text": "\u201cOnly in the darkness can you see the stars.\u201d",
+                "tags": [
+                    "hope",
+                    "inspirational"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "James Baldwin",
+        "born_date": "1924-08-02T00:00:00",
+        "born_location": "in Harlem, New York, The United States",
+        "description": "Librarian Note: There is more than one au",
+        "quotes": [
+            {
+                "text": "\u201cLove does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.\u201d",
+                "tags": [
+                    "love"
+                ]
+            }
+        ]
+    }
+]
