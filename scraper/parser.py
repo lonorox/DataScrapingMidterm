@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 from wheel.cli import tags_f
 
-from scraper.collector import Collector
-from utils import text_transformers as pr
-from models import data_models as dm
+from DataScrapingMidterm.scraper.collector import Collector
+from DataScrapingMidterm.utils import text_transformers as pr
+from DataScrapingMidterm.models import data_models as dm
 from datetime import datetime
 
 
