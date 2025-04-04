@@ -6,8 +6,8 @@ from datetime import datetime
 class SaveData:
     def save_as_json(self, data):
         try:
-            os.makedirs("data", exist_ok=True)  # Ensure the directory exists
-            with open("data/data.json", "w") as file:
+            os.makedirs("data/raw", exist_ok=True)  # Ensure the directory exists
+            with open("data/raw/data.json", "w") as file:
                 json.dump(data, file, indent=4)
         except (OSError, IOError) as e:
             print(f"Error saving JSON file: {e}")
@@ -17,14 +17,16 @@ class SaveData:
     def save_as_csv(self, data):
         try:
             if not isinstance(data, list):
-                raise ValueError("Data should be a list of dictionaries or lists.")
-            os.makedirs("data", exist_ok=True)  # Ensure the directory exists
+                raise ValueError("Data should be a untransformedJsonAuthorQuoteList of dictionaries or lists.")
+            os.makedirs("data/raw", exist_ok=True)  # Ensure the directory exists
             df = pd.DataFrame(data)
-            df.to_csv("data/data.csv", index=False, mode='w')
+            df.to_csv("data/raw/data.csv", index=False, mode='w')
         except ValueError as e:
             print(f"Invalid data format: {e}")
         except (OSError, IOError) as e:
             print(f"Error saving CSV file: {e}")
+
+
     """method load_file loads either or csv or json file. process_csv transforms csv data"""
     def load_file(self, file, filetype="json"):
         try:
@@ -57,7 +59,7 @@ class SaveData:
             # Ensure 'quotes' column exists
             if 'quotes' not in df.columns:
                 raise KeyError("The 'quotes' column is missing in the CSV file.")
-            # Parse the quotes column as a list of dictionaries
+            # Parse the quotes column as a untransformedJsonAuthorQuoteList of dictionaries
             df['quotes'] = df['quotes'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else [])
             # Split data into two dataframes
             # Everything without the 'quotes' column
@@ -81,10 +83,10 @@ class SaveData:
             # Create DataFrame for quotes
             df_quotes = pd.DataFrame(quotes_data)
             # Ensure the 'data' directory exists
-            os.makedirs("data", exist_ok=True)
+            os.makedirs("data/transformed", exist_ok=True)
             # Save to CSVs
-            df_without_quotes.to_csv("data/data_without_quotes.csv", index=False)
-            df_quotes.to_csv("data/quotes_data.csv", index=False)
+            df_without_quotes.to_csv("data/transformed/authors_before.csv", index=False)
+            df_quotes.to_csv("data/transformed/quotes.csv", index=False)
         except FileNotFoundError as e:
             print(f"Error: {e}")
         except pd.errors.EmptyDataError:
@@ -104,9 +106,9 @@ class SaveData:
         df = self.load_file(file, "csv")
         # Convert 'born_date' to datetime and then to a more human-readable format
         df['born_date'] = pd.to_datetime(df['born_date']).dt.strftime('%B %d, %Y')
-
+        os.makedirs("data/transformed", exist_ok=True)  # Ensure the directory exists
         # Save the transformed data back to CSV
-        df.to_csv("final_data.csv", index=False)
+        df.to_csv("data/transformed/authors_after.csv", index=False)
 
     def calculate_age(self,file):
         df = self.load_file(file, "csv")
@@ -118,4 +120,4 @@ class SaveData:
             lambda x: current_date.year - x.year - ((current_date.month, current_date.day) < (x.month, x.day)))
 
         # Save the transformed data with age back to CSV (optional)
-        df.to_csv("data/transformed_data_with_age.csv", index=False)
+        df.to_csv("data/transformed/authors_with_current_ages.csv", index=False)
