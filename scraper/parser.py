@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 from wheel.cli import tags_f
 
-from DataScrapingMidterm.scraper.collector import Collector
-from DataScrapingMidterm.utils import prettier as pr
-from DataScrapingMidterm.models import data_models as dm
+from scraper.collector import Collector
+from utils import text_transformers as pr
+from models import data_models as dm
 from datetime import datetime
 
 
@@ -26,16 +26,10 @@ class AuthorParser:
         getBirthPlace = soup.select_one(".author-details > p > .author-born-location").get_text()
 
         getBirthPlace = pr.cleaner(getBirthPlace)
-        getBirthDate = datetime.strptime(getBirthDate, "%B %d, %Y")
+        getBirthDate = datetime.strptime(getBirthDate, "%B %d, %Y").isoformat()
 
         return dm.Author(getName, getBirthDate, getBirthPlace, getDescription, [])
 
-
-# test_url = 'https://quotes.toscrape.com/author/Albert-Einstein/'
-#
-# a = AuthorParser()
-# print(a.get_author(test_url).to_dict())
-#
 
 class QuoteParser:
     def get_link(self, soup: BeautifulSoup):
@@ -49,16 +43,19 @@ class QuoteParser:
 
 class MainParser:
     def __init__(self):
-        pass
-
-    def run(self, pages=1):
-        website = 'https://quotes.toscrape.com'
+        self.list = []
+    def next_page(self,url):
+        response = Collector.get_method(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        nextURL =soup.find('li',class_='next').find('a').get('href')
+        return nextURL
+    def run(self, url, pages=1):
         current_page = '/page/1/'
         counter = 0
         author_set = set()
         data = {}
         while True:
-            response = Collector.get_method(f'{website}{current_page}')
+            response = Collector.get_method(f'{url}{current_page}')
             if not response or counter >= pages:
                 break
 
@@ -67,11 +64,10 @@ class MainParser:
             quoteParser = QuoteParser()
             authorParser = AuthorParser()
 
-            quoteBlocks = soup.select_one('div.quote')
             for b in soup.select('div.quote'):
 
                 quote = quoteParser.get_quote(b)
-                author_link = f'{website}{quoteParser.get_link(b)}'
+                author_link = f'{url}{quoteParser.get_link(b)}'
                 Author = authorParser.get_author(author_link)
 
                 if Author.name not in author_set:
@@ -83,9 +79,9 @@ class MainParser:
                 else:
                     data[Author.name].append_quotes(quote)
 
-            #
-
+            current_page =  self.next_page(f'{url}{current_page}')
             counter += 1
 
-            for v in data.values():
-                print(v.to_dict())
+        for v in data.values():
+            self.list.append(v.to_dict())
+        return self.list
