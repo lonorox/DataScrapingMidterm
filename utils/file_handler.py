@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import os
 import ast
+from datetime import datetime
 class SaveData:
     def save_as_json(self, data):
         try:
@@ -98,3 +99,23 @@ class SaveData:
             print(f"Error saving files: {e}")
         except Exception as e:
             print(f"Unexpected error: {e}")
+
+    def born_date(self,file):
+        df = self.load_file(file, "csv")
+        # Convert 'born_date' to datetime and then to a more human-readable format
+        df['born_date'] = pd.to_datetime(df['born_date']).dt.strftime('%B %d, %Y')
+
+        # Save the transformed data back to CSV
+        df.to_csv("final_data.csv", index=False)
+
+    def calculate_age(self,file):
+        df = self.load_file(file, "csv")
+        current_date = datetime.now()
+        df['born_date'] = pd.to_datetime(df['born_date'])
+
+        # Calculate age at the current date and add a new 'age_at_current_date' column
+        df['age_at_current_date'] = df['born_date'].apply(
+            lambda x: current_date.year - x.year - ((current_date.month, current_date.day) < (x.month, x.day)))
+
+        # Save the transformed data with age back to CSV (optional)
+        df.to_csv("data/transformed_data_with_age.csv", index=False)
