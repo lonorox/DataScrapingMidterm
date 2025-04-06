@@ -3,8 +3,6 @@ Install the dependencies listed in requirements:
 
     pip install -r requirements.txt
 
-This project scrapes author and quote data from https://quotes.toscrape.com.
-
 **How to Run**:
 
 	1.	Open main.py.
@@ -12,7 +10,10 @@ This project scrapes author and quote data from https://quotes.toscrape.com.
 	3.	To adjust the number of pages to scrape, change the value of:
         pages_to_Scrap = 5
 
+This project scrapes author and quote data from https://quotes.toscrape.com.
+
 **Data Folder Structure**
+
 
 data/raw/ -
 Contains the initially parsed data:
@@ -38,6 +39,8 @@ Contains visualizations:
 
 	•	most_frequent_authors.png: Bar chart of the most frequently quoted authors.
 	•	most_frequent_tags.png: Bar chart of the most commonly used tags.
+
+
 
 
 **Code Overview**
