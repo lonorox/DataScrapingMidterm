@@ -1,4 +1,8 @@
 # DataScrapingMidterm
+Install the dependencies listed in requirements:
+
+    pip install -r requirements.txt
+
 This project scrapes author and quote data from https://quotes.toscrape.com.
 
 **How to Run**:

@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from wheel.cli import tags_f
 
 from DataScrapingMidterm.scraper.collector import Collector
 from DataScrapingMidterm.utils import text_transformers as pr
