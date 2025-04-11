@@ -1,0 +1,7 @@
+This project is a web scraper built to extract quotes and author data from the website https://quotes.toscrape.com. The site was chosen for its simplicity, accessibility, and structured presentation of information, making it an ideal target for practicing web scraping techniques. It provides a rich dataset of famous quotes, well-known authors, and associated tags — all of which are valuable for basic data analysis tasks.
+The main goal of this project is to collect and analyze data related to quotes and their authors. By scraping this data, we gain insights into which authors are quoted most frequently, what kinds of tags are most common, and how quotes are categorized across different topics. Each quote on the site is associated with one or more tags, and these tags allow us to understand trends and popular themes in inspirational or literary quotes.
+The data extracted includes:,The full text of each quote,The name, birthdate, birthdate of the author, Tags associated with each quote.
+Once the data is collected, it is cleaned and structured into a format suitable for analysis — such as CSV. Basic data exploration is performed to identify:The most quoted authors,The most frequently occurring tags, Calculating how much time has passed since author's birth.
+This project demonstrates the use of libraries like requests, BeautifulSoup, and pandas to perform web scraping, parse HTML content, and conduct simple data analysis. It also touches on ethical scraping practices, ensuring that requests are respectful and within reasonable limits.
+
+
